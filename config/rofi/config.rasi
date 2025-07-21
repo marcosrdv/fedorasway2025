@@ -1,0 +1,6 @@
+configuration {
+    font: "Roboto 16";
+    show-icons: true;
+    icon-theme: "Papirus";
+}
+@theme "themes/rounded-green-dark.rasi"
