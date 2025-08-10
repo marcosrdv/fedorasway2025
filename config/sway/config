@@ -55,10 +55,10 @@ output * bg ~/Pictures/wallpaper.jpg fill
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
+exec swayidle -w \
+          timeout 600 'swaylock --ignore-empty-password --daemonize --indicator-caps-lock --show-failed-attempts --indicator-idle-visible' \
+          timeout 900 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+          before-sleep 'swaylock --ignore-empty-password --daemonize --indicator-caps-lock --show-failed-attempts --indicator-idle-visible'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
